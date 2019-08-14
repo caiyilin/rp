@@ -1,0 +1,40 @@
+.row {
+  margin: 28rpx;
+  border: 1px solid #e7e7e7;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding: 20rpx 10rpx;
+}
+
+.select-inner {
+  position: relative;
+  width: 33%;
+  float: left;
+}
+
+.select-btn {
+  border-radius: 30rpx;
+  border: 1px solid #d6d6d6;
+  color: #d6d6d6;
+  text-align: center;
+  margin: 10rpx 10rpx;
+  line-height: 60rpx;
+}
+
+.select-btn.activied{
+  background: #4DA9EC;
+  color: #fff;
+  border: 1px solid #4DA9EC;
+}
+
+.placeholderClass {
+  color: #ccc;
+}
+
+textarea {
+  width: 100% !important;
+}
+
+.btn-submit{
+  margin: 28rpx;
+}

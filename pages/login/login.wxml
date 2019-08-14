@@ -1,0 +1,38 @@
+<wux-dialog id="wux-dialog" />
+<form bindsubmit="handleLogin">
+  <view class="logo">
+    <image src="{{logoIcon}}" />
+  </view>
+  <block wx:if="{{!isValidAccountSuccess}}">
+    <view class="row">
+      <label class="title">用户名</label>
+      <view class="info">
+        <input class="info-input" name="userCd" placeholder="请输入用户名" placeholder-class="placeholderClass" bindinput="handleAccountChange" />
+      </view>
+    </view>
+    <view class="row">
+      <label class="title">密码</label>
+      <view class="info">
+        <input class="info-input" password name="password" placeholder="请输入密码" placeholder-class="placeholderClass" bindinput="handlePasswordChange" />
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{isValidAccountSuccess}}">
+    <view class="row">
+      <label class="title">手机号码</label>
+      <input class="info-input" disabled="true" name="mobile" value="{{mobile}}"></input>
+    </view>
+    <view class="row">
+      <label class="title">验证码</label>
+      <view class="info">
+        <input class="info-input code-input" type='number' name="authCode" placeholder="请输入短信验证码" placeholder-class="placeholderClass" maxlength="4" bindinput="handleCodeChange" />
+        <button class='send-code' bindtap='handleSendCode' disabled="{{isCodeDisabled}}">{{codeDown || '获取验证码' }}</button>
+      </view>
+    </view>
+  </block>
+  <view class="footer-btn">
+    <button class='btn btn-submit' form-type="submit" type='primary'> 登录 </button>
+    <button class="btn btn-change" type="default" bindtap="handleNavigateToBack" wx:if="{{isValidAccountSuccess}}"> 切换账号</button>
+  </view>
+  <wux-toast id="wux-toast" />
+</form>

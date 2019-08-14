@@ -1,0 +1,13 @@
+<wux-popup-select visible="{{ visible }}" controlled value="{{ selectedMobile }}" options="{{ callMobileList }}" data-index="1" bind:confirm="onConfirm" bind:valueChange="onValueChange" />
+<view class="row">
+  <wux-cell-group>
+    <wux-popup-select value="{{ selectedMobile }}" options="{{ callMobileList }}" data-index="1" bind:confirm="onConfirm" bind:valueChange="onValueChange">
+      <wux-cell title="主叫号码" is-link extra="{{ displayMobileLabel }}"></wux-cell>
+    </wux-popup-select>
+  </wux-cell-group>
+</view>
+
+<view class="footer">
+  <button class="btn logout" type="default" bindtap="handleLoginOut"> 退出</button>
+</view>
+<wux-toast id="wux-toast" />

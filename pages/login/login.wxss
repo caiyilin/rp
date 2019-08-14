@@ -1,0 +1,90 @@
+page {
+  background: #f8f8f8;
+  font-size: 32rpx;
+}
+
+.logo {
+  padding: 60rpx;
+  text-align: center;
+  border-bottom: 2rpx solid #d2d2d2;
+}
+
+.logo image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.row {
+  overflow: hidden;
+  line-height: 56rpx;
+  border-bottom: 2rpx solid #d2d2d2;
+  color: #777;
+  background: #fff;
+  padding: 28rpx 0;
+}
+
+.title {
+  float: left;
+  width: 200rpx;
+  text-align: center;
+  color: #333;
+}
+
+.info {
+  position: relative;
+  overflow: hidden;
+}
+
+.info-input {
+  height: 56rpx;
+}
+
+.placeholderClass {
+  color: #dedede;
+}
+
+.code-input {
+  width: 260rpx;
+  float: left;
+}
+
+.send-code {
+  float: right;
+  margin-right: 30rpx;
+  line-height: 60rpx;
+  background: #3ab54a;
+  font-size: 28rpx;
+  color: #fff;
+  padding-right: 12rpx;
+  padding-left: 12rpx;
+  z-index: 999
+}
+
+.btn-submit {
+  background: #4da9ec !important;
+  z-index: 999;
+}
+
+.btn {
+  margin-bottom: 40rpx;
+}
+
+.footer-btn {
+  margin: 100rpx 20rpx 0rpx 20rpx;
+}
+
+.btn-change{
+  background-color: #fff !important;
+}
+
+.wux-cell--access::after {
+  border: none !important;
+}
+
+.wux-cell--access {
+  padding: 0 30rpx !important;
+}
+
+.wux-cell:hover {
+  background-color: transparent !important;
+}

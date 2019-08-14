@@ -1,0 +1,123 @@
+<template name="templateResumeDetail">
+  <wux-card full="{{ true }}" title="基本信息" wux-class="row-list">
+    <view slot="body">
+      <view class='info'>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>姓名：</text>
+          </view>
+          <view class='row-text'>{{resumeBaseInfo.name}}</view>
+        </view>
+        <view class="base-row">
+          <view class='base-row-left'>
+            <text class='base-title'>性别：</text>
+          </view>
+          <text class='row-text'>{{resumeBaseInfo.sexName}}</text>
+        </view>
+        <view class="base-row">
+          <view class='base-row-left'>
+            <text class='base-title'>手机：</text>
+          </view>
+          <text class='row-text'>{{resumeBaseInfo.mobile}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>邮箱：</text>
+          </view>
+          <text class='row-text'> {{resumeBaseInfo.email}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>出生日期：</text>
+          </view>
+          <text class='row-text'>{{resumeBaseInfo.birthday}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>年龄：</text>
+          </view>
+          <text class='row-text'>{{resumeBaseInfo.age}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>学历：</text>
+          </view>
+          <text class='row-text'>{{resumeBaseInfo.educationName}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>民族：</text>
+          </view>
+          <text class='row-text'>{{resumeBaseInfo.national}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>籍贯：</text>
+          </view>
+          <text class='row-text'>{{resumeBaseInfo.nativePlace}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>婚姻状况：</text>
+          </view>
+          <text class='row-text'>{{resumeBaseInfo.marriedName}}</text>
+        </view>
+      </view>
+    </view>
+  </wux-card>
+
+  <wux-card full="{{ true }}" title="香聘投递" wux-class="row-list">
+    <view slot="body">
+      <view class='info'>
+        <block wx:for="{{resumeApplyInfoList}}" wx:key="apply">
+          <view class='base-row'>
+            <view class='row-left'>
+              <text class='row-text'>{{item.positionName}}</text>
+              <text class="sub-text">{{item.customerName}}</text>
+            </view>
+            <view class='row-right'>
+              <view>{{item.applyTime}} 投递</view>
+              <view>{{item.interviewTime}} 面试</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </wux-card>
+
+  <wux-card full="{{ true }}" title="工作经历" wux-class="row-list">
+    <view slot="body">
+      <view class='info'>
+        <block wx:for="{{resumeWorkExperienceList}}" wx:key="experience">
+          <view class='base-row'>
+            <view class='row-left'>
+              <text class='row-text'>{{item.workUnit}}</text>
+              <text class="sub-text">{{item.position}}</text>
+            </view>
+            <view class='row-right'>
+              <view>{{item.startDate}} - {{item.endDate}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </wux-card>
+
+  <wux-card full="{{ true }}" title="教育经历" wux-class="row-list">
+    <view slot="body">
+      <view class='info'>
+        <block wx:for="{{educationExperienceList}}" wx:key="education">
+          <view class='base-row'>
+            <view class='row-left'>
+              <text class='row-text'>{{item.school}}</text>
+              <text class="sub-text">{{item.major}}</text>
+            </view>
+            <view class='row-right'>
+              <view>{{item.startDate}} - {{item.endDate}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </wux-card>
+</template>

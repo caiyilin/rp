@@ -1,0 +1,77 @@
+.row-list {
+  margin: 25rpx 0rpx;
+}
+
+.info {
+  position: relative;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #979797;
+}
+
+.row-num {
+  flex: 1;
+  float: left;
+  font-weight: bold;
+}
+
+.row-text {
+  color: #333;
+}
+
+.total-num {
+  color: #5db0ec;
+}
+
+.called-num {
+  color: #5fc36b;
+}
+
+.uncall-num {
+  color: #f00;
+}
+
+.type-success {
+  color: #5fc36b;
+}
+
+.type-danger {
+  color: #f00;
+}
+
+.info-right {
+  flex: 1;
+  text-align: center;
+  margin: auto;
+}
+
+.info-left {
+  width: 90%;
+}
+
+.icon-forward {
+  color: #dadada;
+}
+
+.wux-loader--end {
+  height: 50rpx !important;
+}
+
+.wux-loader__content {
+  color: #dbdbdb !important;
+}
+
+.no-more-data {
+  position: relative;
+  margin: auto;
+  height: 60rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #666;
+}

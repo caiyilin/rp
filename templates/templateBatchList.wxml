@@ -1,0 +1,41 @@
+<template name="templateBatchList">
+  <block wx:for="{{batchList}}" wx:key="batch">
+    <wux-card full="{{ true }}" title="{{item.batchName}}" wux-class="row-list">
+      <view slot="top-right">
+        <text class="{{item.batchTypeCd == '02'?'type-success':'type-danger'}}">{{item.batchTypeName}}</text>
+      </view>
+      <view slot="body">
+        <view class='info' id='{{item.batchUid}}' data-name="{{item.batchName}}" bindtap='handleNavigatorToBatchResumeList'>
+          <view class='info-left'>
+            <view class='row'>
+              <text>总量：</text>
+              <text class='row-num total-num'>{{item.totalCount}}</text>
+              <text>已拨：</text>
+              <text class='row-num called-num'>{{item.dialedCount}}</text>
+              <text>未拨：</text>
+              <text class='row-num uncall-num'>{{item.waitDialCount}}</text>
+            </view>
+            <view class='row'>
+              <view>所属人：</view>
+              <text class='row-text'> {{item.belongUserName}}</text>
+            </view>
+            <view class='row' wx:if="{{item.batchTypeCd == '02'}}">
+              <view>归属项目：</view>
+              <text class='row-text'> {{item.belongContractPositionName}}</text>
+            </view>
+            <view class='row'>
+              <view>批次创建人：</view>
+              <text class='row-text'>{{item.insertUserName}}</text>
+            </view>
+          </view>
+          <view class='info-right'>
+            <wux-icon type='ios-arrow-forward' class='icon-forward' />
+          </view>
+        </view>
+      </view>
+    </wux-card>
+  </block>
+  <view class="no-more-data" wx:if="{{noMoreData}}">
+    <view class="no-more-content">没有更多数据了</view>
+  </view>
+</template>

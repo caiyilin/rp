@@ -1,0 +1,54 @@
+.banner {
+  padding: 20rpx;
+  text-align: center;
+}
+
+.banner image {
+  width: 710rpx;
+  height: 410rpx;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  padding: 20rpx;
+}
+
+.row {
+  display: flex;
+  padding-bottom: 30rpx;
+}
+
+.row-cell {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.row .row-text {
+  color: #666;
+  font-size: 24rpx;
+}
+
+.inner-text {
+  font-weight: bold;
+  font-size: 40rpx;
+  display: block !important;
+  margin: 0 auto;
+}
+
+.inner-text1 {
+  color: #33cd5f;
+}
+
+.inner-text2 {
+  color: #e95507;
+}
+
+.inner-text3 {
+  color: #4ca9eb;
+}
+
+.inner-text4 {
+  color: #fab74b;
+}

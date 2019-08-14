@@ -1,0 +1,11 @@
+@import "/templates/templateCallResumePage.wxss";
+
+page {
+  background: #f8f8f8;
+}
+
+.header{
+  border: 1px solid red;
+  height: 50rpx;
+  margin-top: 2rpx;
+}

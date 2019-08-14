@@ -1,0 +1,20 @@
+page {
+  background: #f8f8f8;
+}
+
+.row {
+  padding: 20rpx 0rpx 0rpx 0rpx;
+  position: relative;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 100rpx 20rpx;
+}
+
+.logout{
+  background-color: #fff !important;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "拨打批次",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "wux-search-bar": "/components/searchbar/index"
+  }
+}

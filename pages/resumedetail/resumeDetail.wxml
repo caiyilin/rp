@@ -1,0 +1,2 @@
+<import src="/templates/templateResumeDetail.wxml" />
+<template is="templateResumeDetail" data="{{...detail}}" />

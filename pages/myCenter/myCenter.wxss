@@ -1,0 +1,47 @@
+page {
+  background: #f8f8f8;
+}
+
+.row {
+  padding: 20rpx 0rpx 0rpx 0rpx;
+}
+
+.header {
+  display: flex;
+}
+
+.row-left {
+  padding: 20rpx 30rpx;
+  float: left;
+}
+
+.image {
+  width: 160rpx !important;
+  height: 160rpx !important;
+}
+
+.row-right {
+  display: block;
+}
+
+.header .row-right .content {
+  padding: 60rpx 30rpx;
+}
+
+.header .row-right .name {
+  font-weight: bold;
+}
+
+.header .row-right .dept {
+  color: #aeaeae;
+}
+
+.wux-cell--access::after {
+  left: 0 !important;
+}
+
+.my-icon {
+  color: #51abec !important;
+  font-size: 40rpx !important;
+  margin: 5rpx 10rpx 0 0;
+}

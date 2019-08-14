@@ -1,0 +1,62 @@
+@import "/templates/templateBatchList.wxss";
+@import "/templates/templateNoData.wxss";
+
+page {
+  background: #f8f8f8;
+}
+
+.search-container {
+  background: #ededed;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.search-bar {
+  position: inherit !important;
+  background: transparent !important;
+}
+
+.search-bar .wux-search-bar__form {
+  border-radius: 16rpx !important;
+}
+
+.search-bar .wux-search-bar__label {
+  position: static !important;
+}
+
+.search-right {
+  position: relative;
+  float: right;
+  flex: 1;
+  padding: 16rpx 20rpx 16rpx 0rpx;
+}
+
+.calendar-text {
+  position: relative;
+  background: #fff;
+  height: 56rpx;
+  line-height: 56rpx;
+  border-radius: 16rpx;
+  padding: 0rpx 10rpx;
+  font-size: 28rpx;
+}
+
+.icon-calendar {
+  color: #ededed;
+  position: absolute;
+  right: 30rpx;
+  text-align: center;
+  top: 18rpx;
+  z-index: 9;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.list-content {
+  clear: both;
+  padding-top: 92rpx;
+}

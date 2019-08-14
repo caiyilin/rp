@@ -1,0 +1,56 @@
+<view>
+  <wux-card full="{{ true }}" title="基本信息" wux-class="row-list">
+    <view slot="body">
+      <view class='info'>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>姓名：</text>
+          </view>
+          <view class='row-text'>{{baseInfo.userName}}</view>
+        </view>
+        <view class="base-row">
+          <view class='base-row-left'>
+            <text class='base-title'>性别：</text>
+          </view>
+          <text class='row-text'>{{baseInfo.sexName}}</text>
+        </view>
+        <view class="base-row">
+          <view class='base-row-left'>
+            <text class='base-title'>手机：</text>
+          </view>
+          <text class='row-text'>{{baseInfo.userPhone}}</text>
+        </view>
+        <view class="base-row">
+          <view class='base-row-left'>
+            <text class='base-title'>职位：</text>
+          </view>
+          <text class='row-text'>{{baseInfo.positionName}}</text>
+        </view>
+        <view class="base-row">
+          <view class='base-row-left'>
+            <text class='base-title'>所在部门：</text>
+          </view>
+          <text class='row-text'>{{baseInfo.deptName}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>邮箱：</text>
+          </view>
+          <text class='row-text'> {{baseInfo.userMail}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>出生日期：</text>
+          </view>
+          <text class='row-text'>{{baseInfo.birthday}}</text>
+        </view>
+        <view class='base-row'>
+          <view class='base-row-left'>
+            <text class='base-title'>年龄：</text>
+          </view>
+          <text class='row-text'>{{baseInfo.age}}</text>
+        </view>
+      </view>
+    </view>
+  </wux-card>
+</view>

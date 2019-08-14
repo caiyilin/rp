@@ -1,0 +1,14 @@
+<form bindsubmit="addContactRecord">
+  <view class='row'>
+    <block wx:for="{{followResultArray}}" wx:key="unique">
+      <view class='select-inner'>
+        <view class='select-btn {{item.activied? "activied":""}}' data-index="{{index}}" data-sub-cd="{{item.subCd}}" bindtap='handleSelectFollowResultCd'>{{item.subName}}</view>
+      </view>
+    </block>
+  </view>
+  <view class='row'>
+    <textarea name="content" placeholder='请填写沟通记录' placeholder-class='placeholderClass' maxlength="200" value="{{contactContent}}"></textarea>
+  </view>
+  <button class='btn-submit' form-type="submit" type='primary'> 提交 </button>
+</form>
+<wux-toast id="wux-toast" />

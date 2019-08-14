@@ -1,0 +1,5 @@
+@import "/templates/templateCallResumePage.wxss";
+
+page {
+  background: #f8f8f8;
+}

@@ -1,0 +1,34 @@
+<view class="banner">
+  <image src='{{bannerIcon}}'></image>
+</view>
+<view class='content'>
+  <view class='row'>
+    <view class='row-cell' data-dial-status='1' data-search-day='today' bindtap="handleNavigatorToCallResume">
+      <wux-circle wux-class="inner-text inner-text1" percent="{{ todayCalledPercent }}" size="110" sAngle="90">{{ todayCalledPercent }}</wux-circle>
+      <view class='row-text'>
+        今日已拨打
+      </view>
+    </view>
+    <view class='row-cell' data-dial-status='0' data-search-day='today' bindtap="handleNavigatorToCallResume">
+      <wux-circle wux-class="inner-text inner-text2" percent="{{ todayUnCallPercent }}" size="110" color="#E95507" sAngle="90">{{ todayUnCallPercent }}</wux-circle>
+      <view class='row-text'>
+        今日未拨打
+      </view>
+    </view>
+  </view>
+  <view class='row'>
+    <view class='row-cell' data-dial-status='1' data-search-day='yestoday' bindtap="handleNavigatorToCallResume">
+      <wux-circle wux-class="inner-text inner-text3" percent="{{ yestodayCalledPercent }}" size="110" color="#4CA9EB" sAngle="90">{{ yestodayCalledPercent }}</wux-circle>
+      <view class='row-text'>
+        昨日已拨打
+      </view>
+    </view>
+    <view class='row-cell' data-dial-status='0' data-search-day='yestoday' bindtap="handleNavigatorToCallResume">
+      <wux-circle wux-class="inner-text inner-text4" percent="{{ yestodayUnCallPercent }}" size="110" color="#FAB74B" sAngle="90">{{ yestodayUnCallPercent }}</wux-circle>
+      <view class='row-text'>
+        昨日未拨打
+      </view>
+    </view>
+  </view>
+</view>
+<wux-toast id="wux-toast" />

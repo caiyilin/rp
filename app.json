@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/callbatch/callBatchList",
+    "pages/callbatch/batchResumeList",
+    "pages/contactrecord/addContactRecord",
+    "pages/callresume/callResumeList",
+    "pages/resumedetail/resumeDetail",
+    "pages/myCenter/myCenter",
+    "pages/myCenter/personInfo",
+    "pages/myCenter/setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTitleText": "瑞聘呼叫中心",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#61B3EE",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/resources/index-off.png",
+        "selectedIconPath": "/resources/index-on.png"
+      },
+      {
+        "pagePath": "pages/callbatch/callBatchList",
+        "text": "拨打批次",
+        "iconPath": "/resources/call-batch-off.png",
+        "selectedIconPath": "/resources/call-batch-on.png"
+      },
+      {
+        "pagePath": "pages/callresume/callResumeList",
+        "text": "拨打名单",
+        "iconPath": "/resources/call-today-off.png",
+        "selectedIconPath": "/resources/call-today-on.png"
+      },
+      {
+        "pagePath": "pages/myCenter/myCenter",
+        "text": "我的",
+        "iconPath": "/resources/my-center-off.png",
+        "selectedIconPath": "/resources/my-center-on.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "wux-toast": "/components/toast/index",
+    "wux-dialog": "/components/dialog/index",
+    "wux-icon": "/components/icon/index",
+    "wux-button": "/components/button/index",
+    "wux-card": "/components/card/index",
+    "wux-popup-select": "/components/popup-select/index",
+    "wux-cell": "/components/cell/index",
+    "wux-cell-group": "/components/cell-group/index",
+    "wux-image": "/components/image/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

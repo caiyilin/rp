@@ -1,0 +1,42 @@
+<template name="templateCallResumeList">
+  <block wx:for="{{batchResumeList}}" wx:key="resumes">
+    <wux-card full="{{ true }}" wux-class="row-list">
+      <view slot="body">
+        <view class="info">
+          <view class='info-left'>
+            <view class="row">
+              <view class="top-image" data-resume-uid="{{item.resumeUid}}" data-resume-name="{{item.resumeName}}" bindtap="handleNavigatorToResumeDetail">
+                <image src="{{item.sexCd === '01'?menIcon:womenIcon}}" class="sex-class" wx:if="{{item.sexCd}}" />
+              </view>
+              <text class="top-title" selectable="{{true}}" data-resume-uid="{{item.resumeUid}}" data-resume-name="{{item.resumeName}}" bindtap="handleNavigatorToResumeDetail">{{item.resumeName}}</text>
+              <text class='view-mobile' selectable="{{true}}" data-index="{{index}}" bindtap="{{item.isShowMobile?'':'handleViewMobile'}}">{{item.isShowMobile?item.mobile:'查看手机号'}}</text>
+            </view>
+            <view class='row'>
+              <text>{{item.sexName}} | {{item.educationName}} | {{item.resumeCityName}} | {{item.age}}</text>
+            </view>
+            <view class='row row-status'>
+              <text class="{{item.dialStatus == '0' ? 'uncall-class':'called-class' }}">{{item.dialStatus == '0' ? "未拨打":"已拨打"}}</text>
+              <text wx:if="{{item.dialResultCd}}" class="{{item.dialResultCd == '03' ? 'called-class':'uncall-class' }}">{{item.dialResultCd == '03' ? '已接通':'未接通' }}</text>
+            </view>
+            <view class='row follow'>
+              <block wx:for="{{item.followResultNameList}}" wx:key="follow" wx:for-item="itemName">
+                <text class='row-text activied'>{{itemName}}</text>
+              </block>
+            </view>
+            <view class='row content'>
+              <text>沟通记录：</text>
+              <text class='row-text'>{{item.contactContent?item.contactContent:'无'}}</text>
+            </view>
+          </view>
+          <view class='info-right'>
+            <image src="{{callIcon}}" class='icon-call' data-index="{{index}}" bindtap='handleClickCallBtn'></image>
+            <image src="{{contactIcon}}" class='icon-add' data-index="{{index}}" bindtap='handleAddContactRecordBtn'></image>
+          </view>
+        </view>
+      </view>
+    </wux-card>
+  </block>
+  <view class="no-more-data" wx:if="{{noMoreData}}">
+    <view class="no-more-content">没有更多数据了</view>
+  </view>
+</template>
