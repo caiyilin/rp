@@ -1,6 +1,6 @@
-// const host = "https://rpbak.renruihr.com";
-// const host = "http://172.17.12.224:8085";
-const host = "https://test4rp2.renruihr.com";
+const host = "https://rpbak.renruihr.com";
+// const host = "http://172.17.12.224:8385";
+// const host = "https://test4rp2.renruihr.com";
 const imageDirectory = host + "/static/images/rp/openapi/";
 module.exports = {
   host,
@@ -28,6 +28,7 @@ module.exports = {
     updateCallerNumber: 'updateCallerNumber',
     getFullResumeInfo: 'getFullResumeInfo',
     saveContactContent: 'saveContactContent',
-    getFollowResultList: 'getFollowResultList'
+    getFollowResultList: 'getFollowResultList',
+    getInterviewBatchDetailData: 'getInterviewBatchDetailData'
   }
 }

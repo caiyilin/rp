@@ -15,7 +15,7 @@
 </view>
 <view class="row">
   <wux-cell-group>
-    <wux-cell is-link title="个人信息" url="/pages/myCenter/personInfo">
+    <wux-cell is-link title="个人信息" url="/pages/mycenter/personInfo">
       <view slot="header">
         <wux-icon type="md-person" wux-class="my-icon" />
       </view>
@@ -25,7 +25,7 @@
 
 <view class="row">
   <wux-cell-group>
-    <wux-cell is-link title="设置" url="/pages/myCenter/setting">
+    <wux-cell is-link title="设置" url="/pages/mycenter/setting">
       <view slot="header">
         <wux-icon type="md-settings" wux-class="my-icon" />
       </view>

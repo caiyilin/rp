@@ -2,7 +2,7 @@
   <block wx:for="{{batchResumeList}}" wx:key="resumes">
     <wux-card full="{{ true }}" wux-class="row-list">
       <view slot="body">
-        <view class="info">
+        <view class='info'>
           <view class='info-left'>
             <view class="row">
               <view class="top-image" data-resume-uid="{{item.resumeUid}}" data-resume-name="{{item.resumeName}}" bindtap="handleNavigatorToResumeDetail">

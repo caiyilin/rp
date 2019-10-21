@@ -7,9 +7,10 @@
     "pages/contactrecord/addContactRecord",
     "pages/callresume/callResumeList",
     "pages/resumedetail/resumeDetail",
-    "pages/myCenter/myCenter",
-    "pages/myCenter/personInfo",
-    "pages/myCenter/setting"
+    "pages/mycenter/myCenter",
+    "pages/mycenter/personInfo",
+    "pages/mycenter/setting",
+    "pages/interviewbatch/interviewBatchDetailList"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,6 +29,12 @@
         "selectedIconPath": "/resources/index-on.png"
       },
       {
+        "pagePath": "pages/interviewbatch/interviewBatchDetailList",
+        "text": "复试安排",
+        "iconPath": "/resources/interview-batch-detail-off.png",
+        "selectedIconPath": "/resources/interview-batch-detail-on.png"
+      },
+      {
         "pagePath": "pages/callbatch/callBatchList",
         "text": "拨打批次",
         "iconPath": "/resources/call-batch-off.png",
@@ -40,7 +47,7 @@
         "selectedIconPath": "/resources/call-today-on.png"
       },
       {
-        "pagePath": "pages/myCenter/myCenter",
+        "pagePath": "pages/mycenter/myCenter",
         "text": "我的",
         "iconPath": "/resources/my-center-off.png",
         "selectedIconPath": "/resources/my-center-on.png"

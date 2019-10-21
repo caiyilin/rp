@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"enhance": true,
 		"postcss": true,
@@ -24,7 +24,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.7",
+	"libVersion": "2.8.3",
 	"appid": "wxa3fd23fd93e44fbb",
 	"projectname": "RP_MOBILE",
 	"debugOptions": {

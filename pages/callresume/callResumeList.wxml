@@ -1,3 +1,2 @@
 <import src="/templates/templateCallResumePage.wxml" />
-<view class="header">12342341234</view>
-<template is="templateCallResumePage" data="{{contentHeight,batchResumeList,scrollTop,noData,images,filterItems,noMoreData,showScrollToTopBtn}}" />
+<template is="templateCallResumePage" data="{{contentHeight,batchResumeList,scrollTop,noData,images,filterItems,noMoreData}}" />

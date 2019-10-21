@@ -1,7 +1,5 @@
 .row-list {
-  /* margin: 25rpx 0rpx; */
-  margin: 0rpx 0rpx 25rpx 0;
-  padding-bottom: 0 !important;
+  margin: 25rpx 0rpx;
 }
 
 .top-title {

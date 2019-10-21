@@ -1,2 +1,2 @@
 <import src="/templates/templateCallResumePage.wxml" />
-<template is="templateCallResumePage" data="{{contentHeight,batchResumeList,scrollTop,noData,images,filterItems,noMoreData,showScrollToTopBtn}}" />
+<template is="templateCallResumePage" data="{{contentHeight,batchResumeList,scrollTop,noData,images,filterItems,noMoreData}}" />

@@ -12,11 +12,10 @@ module.exports = {
     keyword: '',
     contentHeight: 0,
     count: 0,
+    scrollTop: 0,
     batchResumeList: [],
     noData: false,
     noMoreData: false,
-    showScrollToTopBtn: false,
-    scrollTop: 0,
     images: {
       callIcon: config.callIcon,
       contactIcon: config.pencilIcon,
@@ -87,7 +86,6 @@ module.exports = {
     })
     this.staticData.keyword = e.detail.value;
     // console.log(this.staticData.keyword);
-    console.log("----onConfirm-----------")
     this.loadCallResumeListData();
   },
 
@@ -102,11 +100,7 @@ module.exports = {
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-    console.log("----onReachBottom-----------")
     this.onLoadmore();
-    // this.setData({
-    //   showScrollToTopBtn: true
-    // });
   },
 
   loadCallResumeListData() {
@@ -114,7 +108,7 @@ module.exports = {
   },
 
   onRefresh() {
-    console.log('onRefresh');
+    // console.log('onRefresh');
     wx.showLoading({
       title: '加载中...',
       mask: true
@@ -171,13 +165,11 @@ module.exports = {
           that.setData({
             batchResumeList: [...that.staticData.callBatchDetailDataBeanList],
             noData: that.staticData.count == 0,
-            noMoreData: false,
-            showScrollToTopBtn: false
+            noMoreData: false
           });
         } else {
           that.setData({
-            batchResumeList: [...that.data.batchResumeList, ...that.staticData.callBatchDetailDataBeanList],
-            showScrollToTopBtn: true
+            batchResumeList: [...that.data.batchResumeList, ...that.staticData.callBatchDetailDataBeanList]
           });
           if (that.staticData.count == 0) {
             // console.log('没有更多数据')
@@ -393,26 +385,5 @@ module.exports = {
   //无数据是轻触刷新
   handleLoadDataBtn() {
     this.loadCallResumeListData();
-  },
-
-  //返回顶部
-  handleScrollToTop() {
-    var that = this;
-    var _top = this.data.scrollTop;
-    if (_top == 0) {
-      _top = 1;
-    } else {
-      _top = 0;
-    }
-    this.setData({
-      scrollTop: _top
-    })
-    // wx.createSelectorQuery().select('.list-container').boundingClientRect(function(rect) {
-    wx.pageScrollTo({
-      scrollTop: _top,
-      duration: 300
-    });
-
-    // }).exec()
   }
 }
