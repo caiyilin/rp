@@ -1,0 +1,14 @@
+<import src="/templates/templateInterviewBatchDetailList.wxml" />
+<import src="/templates/templateNoData.wxml" />
+
+<view class='page' style='height:100vh'>
+  <view class='search-container'>
+    <view class='search-left'>
+      <wux-search-bar wux-class="search-bar" clear="{{true}}" show-cancel="{{false}}" value="{{ value }}" placeholder="可按人员姓名、手机号码搜索" bind:confirm="onConfirm" bind:change="onChange" bind:clear="onClear" />
+    </view>
+  </view>
+  <view class='list-content' style='height:{{contentHeight}}px'>
+    <template is="templateInterviewBatchDetailList" data="{{interviewBatchDetailList,...images,noMoreData}}" wx:if="{{!noData}}" />
+    <template is="templateNoData" wx:if="{{noData}}" data="{{...images}}" />
+  </view>
+</view>

@@ -1,0 +1,133 @@
+.row-list {
+  margin: 25rpx 0rpx;
+}
+
+.top-title {
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.view-mobile {
+  font-size: 24rpx;
+  color: #4da9ec;
+  padding-left: 30rpx;
+}
+
+.info {
+  position: relative;
+}
+
+.info-left {
+  padding-right: 70rpx;
+}
+
+.row {
+  line-height: 50rpx;
+  font-size: 27rpx;
+  color: #979797;
+}
+
+.row-text {
+  color: #333;
+}
+
+.called-class {
+  color: #5fc36b;
+  padding-right: 20rpx;
+}
+
+.uncall-class {
+  color: #f00;
+  padding-right: 20rpx;
+}
+
+.icon-call {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #5fc36b;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.icon-add {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #4da9ec;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.wux-loader--end {
+  height: 50rpx !important;
+}
+
+.wux-loader__content {
+  color: #dbdbdb !important;
+}
+
+.follow .activied {
+  border: 1rpx dashed #fc5d08;
+  border-radius: 30rpx;
+  text-align: center;
+  margin: 4rpx 8rpx 4rpx 0rpx;
+  padding: 10rpx;
+  line-height: 20rpx;
+  float: left;
+  color: #fc5d08;
+  font-size: 27rpx;
+}
+
+.content {
+  clear: both;
+}
+
+.top-image {
+  position: relative;
+  width: 95rpx;
+  margin: 5rpx 0 0 0;
+  float: left;
+}
+
+.sex-class {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.interview-status-name {
+  font-size: 14px;
+  float: right;
+}
+
+.interview-success {
+  color: #00c309;
+}
+
+.interview-fail {
+  color: #f00;
+}
+
+.interview-start-time {
+  color: #00c309;
+  font-size: 14px;
+}
+
+.interviewer {
+  padding-left: 95rpx;
+}
+
+.info-left {
+  padding: 0;
+}
+
+.no-more-data {
+  position: relative;
+  margin: auto;
+  height: 60rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #666;
+}

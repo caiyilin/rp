@@ -1,0 +1,35 @@
+<template name="templateInterviewBatchDetailList">
+  <block wx:for="{{interviewBatchDetailList}}" wx:key="interviewBatchDetails">
+    <wux-card full="{{ true }}" wux-class="row-list">
+      <view slot="body">
+        <view class='info'>
+          <view class='info-left'>
+            <view class="row">
+              <view class="top-image" data-resume-uid="{{item.mobile}}" data-resume-name="{{item.name}}">
+                <image src="{{item.sexCd === '01'?menIcon:womenIcon}}" class="sex-class" wx:if="{{item.sexCd}}" />
+              </view>
+              <text class="top-title" selectable="{{true}}" data-resume-uid="{{item.mobile}}" data-resume-name="{{item.name}}">{{item.signNo}} {{item.name}} {{item.mobile}} </text>
+              <text class="interview-status-name {{item.interviewStatusCd != '02'?'interview-success':'interview-fail'}}">{{item.interviewStatusName}}</text>
+            </view>
+            <view class='row'>
+              <text>面试轮次：{{item.interviewRoundName}} </text>
+            </view>
+            <view class='row'>
+              <text class="interviewer">安排时间：<text class="interview-start-time">{{item.interviewStartTime}}</text></text>
+            </view>
+
+            <view class='row' wx:if="{{item.interviewEndTime}}">
+              <text class="interviewer">完成时间：{{item.interviewEndTime}}</text>
+            </view>
+            <view class='row'>
+              <text class="interviewer">面试官：{{item.interviewer}}  【{{item.interviewRoomName}}】</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </wux-card>
+  </block>
+  <view class="no-more-data" wx:if="{{noMoreData}}">
+    <view class="no-more-content">没有更多数据了</view>
+  </view>
+</template>
